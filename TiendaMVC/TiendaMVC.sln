@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMVC", "TiendaMVC\TiendaMVC.csproj", "{8E25279D-F7ED-4A30-9CC8-A3F3924D1E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiendaMVC.Tests", "TiendaMVC.Tests\TiendaMVC.Tests.csproj", "{5BC2B392-4493-41FA-82ED-2F26053DEE45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E25279D-F7ED-4A30-9CC8-A3F3924D1E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E25279D-F7ED-4A30-9CC8-A3F3924D1E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E25279D-F7ED-4A30-9CC8-A3F3924D1E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E25279D-F7ED-4A30-9CC8-A3F3924D1E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC2B392-4493-41FA-82ED-2F26053DEE45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC2B392-4493-41FA-82ED-2F26053DEE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC2B392-4493-41FA-82ED-2F26053DEE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC2B392-4493-41FA-82ED-2F26053DEE45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
