@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <img src="~/Images/DanysoftStore.png" />
+</div>
+
+
+<div class="container">
+    <table id="cart" class="table">
+        <thead>
+            <tr>
+                <th>
+                    Producto
+                </th>
+                <th>
+                    Precio
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(TiendaMVC.Models.Product ele in Model) {
+                <tr>
+                    <td>
+                        <img alt="Producto" style="width:5em;" src="@ele.Image" />
+                        @ele.Name
+                    </td>
+                    <td>
+                         @ele.Price<text>€</text> 
+                    </td>
+                </tr>
+                }
+        </tbody>
+    </table>
+</div>
+<div class="container">
+
+    <hr />
+
+    <footer>
+        <p>&copy; Danysoft Internacional 2014</p>
+    </footer>
+</div>

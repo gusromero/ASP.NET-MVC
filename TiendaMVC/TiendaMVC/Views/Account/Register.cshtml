@@ -11,6 +11,12 @@
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary()
+        <div class="form-group">
+        @Html.LabelFor(m => m.LongName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.LongName, new { @class = "form-control" })
+        </div>
+    </div>
 
     <fieldset>
         <legend>Registration Form</legend>

@@ -6,6 +6,10 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.Http;
+using System.Web.Routing;
+using System.Web.SessionState;
+
 
 namespace TiendaMVC
 {
@@ -16,6 +20,8 @@ namespace TiendaMVC
     {
         protected void Application_Start()
         {
+            //GlobalConfiguration.Configure(WebApiConfig.Register);
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
@@ -24,5 +30,20 @@ namespace TiendaMVC
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
         }
+
+        protected void Application_PostAuthorizeRequest()
+        {
+            if (IsWebApiRequest())
+            {
+                HttpContext.Current.SetSessionStateBehavior(SessionStateBehavior.Required);
+            }
+        }
+
+        private bool IsWebApiRequest()
+        {
+            return HttpContext.Current.Request.AppRelativeCurrentExecutionFilePath.StartsWith("~/api");
+        }
+
+
     }
 }

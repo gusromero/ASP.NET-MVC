@@ -72,6 +72,11 @@ namespace TiendaMVC.Models
 
     public class RegisterModel
     {
+
+        [Required]
+        [Display(Name = "Nombre completo")]
+        public string LongName { get; set; }
+
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
